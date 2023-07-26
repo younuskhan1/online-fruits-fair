@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Fruits Fair</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/da860dc3a6.js" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Roboto Slab', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hidden">
+        <!-- navbar -->
+        <nav class="bg-[#F85559] max-w-screen-xl mx-auto my-10 py-5 px-8 md:px-16 lg:px-24">
+            <div class="flex flex-row items-center justify-between">
+                <div>
+                    <ul class="flex gap-4 text-white text-sm">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">All Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img class="w-[32px] h-[32px]" src="./images/logo.png" alt="">
+                    <p class="text-white text-3xl font-bold">Fruit Burst</p>
+                </div>
+                <div class="hidden sm:block">
+                    <input class="px-5 py-2 rounded-full" type="text" name="text" placeholder="Search here" id="">
+                    <span class="font-bold text-xl relative right-10"><i
+                            class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- benner section  -->
+    <section class="max-w-screen-xl mx-auto px-2 md:px-8 lg:px-24">
+        <div class="carousel w-full">
+            <!-- slide 1 -->
+            <div id="slide1"
+                class="carousel-item relative w-full min-h-[340px] bg-no-repeat bg-cover bg-center bg-opacity-75 py-12 rounded-[8px]"
+                style="background-image: url(./images/banner1.png);">
+                <div class="w-full h-full flex justify-center items-center flex-col space-y-7">
+                    <div>
+                        <h1 class="mb-5 text-3xl md:text-6xl  font-bold text-white">Exotic tastes at your
+                        </h1>
+                        <h1 class="mb-5 text-3xl md:text-6xl font-bold text-white text-center">doorstep</h1>
+                    </div>
+                    <p class="mb-5 px-2 text-sm font-bold md:text-2xl lg:text-3xl text-white">We supply highly quality
+                        organic
+                        products</p>
+                    <button class="btn bg-[#F85559] border-none text-white hover:bg-indigo-950">Shop Now</button>
+                </div>
+                <div class="absolute flex justify-between items-end transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slide 2 -->
+            <div id="slide2"
+                class="carousel-item relative w-full min-h-[340px] bg-no-repeat bg-cover bg-center bg-opacity-75 py-12 rounded-[8px]"
+                style="background-image: url(./images/banner2.png);">
+                <div class="w-full h-full flex justify-center items-center flex-col space-y-7">
+                    <div>
+                        <h1 class="mb-5 text-3xl md:text-6xl  font-bold text-white">Exotic tastes at your
+                        </h1>
+                        <h1 class="mb-5 text-3xl md:text-6xl font-bold text-white text-center">doorstep</h1>
+                    </div>
+                    <p class="mb-5 px-2 text-sm font-bold md:text-2xl lg:text-3xl text-white">We supply highly quality
+                        organic
+                        products</p>
+                    <button class="btn bg-[#F85559] border-none text-white hover:bg-indigo-950">Shop Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slide 3 -->
+            <div id="slide3"
+                class="carousel-item relative w-full min-h-[340px] bg-no-repeat bg-cover bg-center bg-opacity-75 py-12 rounded-[8px]"
+                style="background-image: url(./images/banner3.png);">
+                <div class="w-full h-full flex justify-center items-center flex-col space-y-7">
+                    <div>
+                        <h1 class="mb-5 text-3xl md:text-6xl  font-bold text-white">Exotic tastes at your
+                        </h1>
+                        <h1 class="mb-5 text-3xl md:text-6xl font-bold text-white text-center">doorstep</h1>
+                    </div>
+                    <p class="mb-5 px-2 text-sm font-bold md:text-2xl lg:text-3xl text-white">We supply highly quality
+                        organic
+                        products</p>
+                    <button class="btn bg-[#F85559] border-none text-white hover:bg-indigo-950">Shop Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4"
+                class="carousel-item relative w-full min-h-[340px] bg-no-repeat bg-cover bg-center bg-opacity-75 py-12 rounded-[8px]"
+                style="background-image: url(./images/banner4.png);">
+                <div class="w-full h-full flex justify-center items-center flex-col space-y-7">
+                    <div>
+                        <h1 class="mb-5 text-3xl md:text-6xl  font-bold text-white">Exotic tastes at your
+                        </h1>
+                        <h1 class="mb-5 text-3xl md:text-6xl font-bold text-white text-center">doorstep</h1>
+                    </div>
+                    <p class="mb-5 px-2 text-sm font-bold md:text-2xl lg:text-3xl text-white">We supply highly quality
+                        organic
+                        products</p>
+                    <button class="btn bg-[#F85559] border-none text-white hover:bg-indigo-950">Shop Now</button>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="./images/fruit1.png" alt="">
+                <p></p>
+            </div>
+            <div>
+                <img src="./images/fruit2.png" alt="">
+            </div>
+            <div>
+                <img src="./images/fruit3.png" alt="">
+            </div>
+            <div>
+                <img src="./images/fruit4.png" alt="">
+            </div>
+            <div>
+                <img src="./images/fruit5.png" alt="">
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
